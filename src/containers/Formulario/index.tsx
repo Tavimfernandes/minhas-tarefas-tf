@@ -35,13 +35,13 @@ const Formulario = () => {
       <Titulo>Nova tarefa</Titulo>
       <Form onSubmit={cadastrarTarefa}>
         <Campo
-          value="titulo"
+          value={titulo}
           onChange={({ target }) => setTitulo(target.value)}
           type="text"
           placeholder="Titulo"
         />
         <Campo
-          value="descricao"
+          value={descricao}
           onChange={({ target }) => setDescricao(target.value)}
           as="textarea"
           placeholder="Descricao"
